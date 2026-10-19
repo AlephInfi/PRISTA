@@ -79,7 +79,7 @@
 				(pin input line
 					(at -8.89 1.27 0)
 					(length 2.54)
-					(name "OE"
+					(name "OSCIN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -115,7 +115,7 @@
 				(pin output line
 					(at 8.89 -1.27 180)
 					(length 2.54)
-					(name "OUT"
+					(name "OSCOUT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -133,7 +133,7 @@
 				(pin power_in line
 					(at 8.89 1.27 180)
 					(length 2.54)
-					(name "VDD"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2074,6 +2074,12 @@
 		(uuid "fe9b9d3e-afcb-4a05-b98c-386058b4e9bd")
 	)
 	(junction
+		(at 29.21 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2163014f-65a1-4b11-a59b-fdd835b5538d")
+	)
+	(junction
 		(at 146.05 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2096,12 +2102,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "895b7b92-b2c2-4b19-8d46-4939e93d6534")
-	)
-	(junction
-		(at 67.31 39.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b9908e59-7727-421e-80d9-b9783d2e388d")
 	)
 	(junction
 		(at 134.62 60.96)
@@ -2131,13 +2131,9 @@
 		(at 124.46 33.02)
 		(uuid "98dd751c-30af-4048-aa64-39296a4ae2f7")
 	)
-	(no_connect
-		(at 48.26 39.37)
-		(uuid "a6367605-ff3e-4616-bb5b-257427f562a9")
-	)
 	(wire
 		(pts
-			(xy 24.13 93.98) (xy 43.18 93.98)
+			(xy 24.13 93.98) (xy 29.21 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2164,16 +2160,6 @@
 			(type default)
 		)
 		(uuid "27d6e049-8efd-40cb-9df8-0b87df46314e")
-	)
-	(wire
-		(pts
-			(xy 66.04 41.91) (xy 78.74 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2bd56f42-2cba-45c8-b7ab-109380eeda0c")
 	)
 	(wire
 		(pts
@@ -2267,6 +2253,16 @@
 	)
 	(wire
 		(pts
+			(xy 29.21 93.98) (xy 43.18 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a3dd4d1-5d4f-4fc0-b873-1a2b41ffed42")
+	)
+	(wire
+		(pts
 			(xy 139.7 60.96) (xy 146.05 60.96)
 		)
 		(stroke
@@ -2304,6 +2300,16 @@
 			(type default)
 		)
 		(uuid "8123d99e-496c-4beb-b3f1-292beabd7c6d")
+	)
+	(wire
+		(pts
+			(xy 29.21 93.98) (xy 29.21 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93f6eef3-32e5-412b-8182-bada159ab223")
 	)
 	(wire
 		(pts
@@ -2347,16 +2353,6 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 39.37) (xy 74.93 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a4e1a297-cf57-47c8-b59a-ed63492b0643")
-	)
-	(wire
-		(pts
 			(xy 121.92 92.71) (xy 123.19 92.71)
 		)
 		(stroke
@@ -2364,16 +2360,6 @@
 			(type default)
 		)
 		(uuid "b3d0b234-885a-4488-8ca5-2caf34b9bbf9")
-	)
-	(wire
-		(pts
-			(xy 29.21 99.06) (xy 29.21 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c72b4de2-0dfe-4c30-b9e9-d1b905a04814")
 	)
 	(wire
 		(pts
@@ -2542,17 +2528,6 @@
 		)
 		(uuid "4f63b446-dff3-42b6-b7de-67b37c6ff889")
 	)
-	(hierarchical_label "MCU_OSC_IN"
-		(shape output)
-		(at 78.74 41.91 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "54aa2695-ea6f-4d8f-b311-e3646edfdc88")
-	)
 	(hierarchical_label "B2_MISO"
 		(shape output)
 		(at 146.05 50.8 180)
@@ -2630,6 +2605,17 @@
 		)
 		(uuid "af4766a7-9a33-42c9-bd59-ec35444d81ce")
 	)
+	(hierarchical_label "MCU_OSC_IN"
+		(shape output)
+		(at 66.04 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c11f39df-412a-4cb3-ab37-8ebb774b3970")
+	)
 	(hierarchical_label "BMI_MOSI"
 		(shape input)
 		(at 83.82 83.82 0)
@@ -2684,6 +2670,17 @@
 			(justify left)
 		)
 		(uuid "deecbfce-72e7-4368-81f6-15cd3019ad46")
+	)
+	(hierarchical_label "MCU_OSC_OUT"
+		(shape input)
+		(at 48.26 39.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dfbfc26c-0301-426f-856c-bdc86416b802")
 	)
 	(hierarchical_label "B_INT"
 		(shape output)
@@ -2804,7 +2801,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "0b240fc1-5bf5-4a30-ab23-ba0bb7b923b8")
 		(property "Reference" "#PWR065"
 			(at 29.21 95.25 0)
@@ -2959,87 +2955,6 @@
 			(project "main"
 				(path "/6aa21aac-e8da-46e9-ae7a-f048cdfa6a26/59d03ad0-5707-4a1e-8261-79210a859241"
 					(reference "J7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 67.31 35.56 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1b10190c-28ad-4bb8-8231-281fbb4512a0")
-		(property "Reference" "C33"
-			(at 70.104 34.29 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 70.104 36.83 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 68.2752 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 67.31 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 67.31 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ccb4ce4d-602d-4d8b-8417-25de66314680")
-		)
-		(pin "2"
-			(uuid "c28bfd75-ee38-4a4e-9346-f0cbe79fad4c")
-		)
-		(instances
-			(project "main"
-				(path "/6aa21aac-e8da-46e9-ae7a-f048cdfa6a26/59d03ad0-5707-4a1e-8261-79210a859241"
-					(reference "C33")
 					(unit 1)
 				)
 			)
@@ -4353,7 +4268,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Oscillator:Oscillator_SMD_SCTF_SX3M8.000M20F30TNN"
+		(property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
 			(at 57.15 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -4487,7 +4402,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 67.31 31.75 0)
+		(at 67.31 39.37 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -4498,7 +4413,7 @@
 		(dnp no)
 		(uuid "c769571e-ff99-4e0e-8ba1-9e8167c1af42")
 		(property "Reference" "#PWR061"
-			(at 67.31 25.4 0)
+			(at 67.31 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4509,7 +4424,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 67.31 26.67 0)
+			(at 67.31 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4519,7 +4434,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 67.31 31.75 0)
+			(at 67.31 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4530,7 +4445,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 67.31 31.75 0)
+			(at 67.31 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4541,7 +4456,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 67.31 31.75 0)
+			(at 67.31 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4794,84 +4709,6 @@
 			(project "main"
 				(path "/6aa21aac-e8da-46e9-ae7a-f048cdfa6a26/59d03ad0-5707-4a1e-8261-79210a859241"
 					(reference "#PWR060")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 74.93 39.37 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f6f69c45-01f5-4ba8-9bb1-4b64cc666d1e")
-		(property "Reference" "#PWR063"
-			(at 71.12 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 77.47 38.608 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 74.93 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 74.93 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 74.93 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "63e6fc2c-ef7d-47f0-90f8-f670a1482a28")
-		)
-		(instances
-			(project "main"
-				(path "/6aa21aac-e8da-46e9-ae7a-f048cdfa6a26/59d03ad0-5707-4a1e-8261-79210a859241"
-					(reference "#PWR063")
 					(unit 1)
 				)
 			)

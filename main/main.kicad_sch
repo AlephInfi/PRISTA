@@ -4529,6 +4529,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 184.15) (xy 147.32 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22f6b857-64c7-4688-950f-d170cd6b9cf8")
+	)
+	(wire
+		(pts
 			(xy 238.76 147.32) (xy 240.03 147.32)
 		)
 		(stroke
@@ -5089,6 +5099,16 @@
 	)
 	(wire
 		(pts
+			(xy 34.29 186.69) (xy 35.56 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74610f64-909b-47fb-99be-8ecf7aa4ea1b")
+	)
+	(wire
+		(pts
 			(xy 69.85 167.64) (xy 68.58 167.64)
 		)
 		(stroke
@@ -5439,6 +5459,16 @@
 	)
 	(wire
 		(pts
+			(xy 224.79 57.15) (xy 241.3 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3b9934b-9968-4410-a90a-14fc84a8d9f8")
+	)
+	(wire
+		(pts
 			(xy 85.09 21.59) (xy 93.98 21.59)
 		)
 		(stroke
@@ -5676,6 +5706,16 @@
 			(type default)
 		)
 		(uuid "bd707ce9-4833-4816-98b2-afd8ee632905")
+	)
+	(wire
+		(pts
+			(xy 16.51 54.61) (xy 29.21 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdf7fa87-2665-4c03-a41d-a6e1535125d8")
 	)
 	(wire
 		(pts
@@ -6069,13 +6109,33 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 187.96) (xy 35.56 187.96)
+			(xy 146.05 57.15) (xy 160.02 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9d0d761-bd15-4269-ac42-c9cfe2b1de68")
+	)
+	(wire
+		(pts
+			(xy 34.29 190.5) (xy 35.56 190.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "fb2040c6-d9e1-4bf9-87a4-91b370f71548")
+	)
+	(wire
+		(pts
+			(xy 238.76 151.13) (xy 240.03 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb28c169-d955-485d-abfa-6713235d2c81")
 	)
 	(wire
 		(pts
@@ -6217,6 +6277,16 @@
 		)
 		(uuid "0d9c09ae-767f-4bd0-b6fa-e2eea0dd9a29")
 	)
+	(label "B1_OSC_OUT"
+		(at 34.29 186.69 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0ef7f21a-a7a6-40fd-8f33-958a0d4e87e9")
+	)
 	(label "SDIO_CK"
 		(at 16.51 95.25 0)
 		(effects
@@ -6266,6 +6336,16 @@
 			(justify right bottom)
 		)
 		(uuid "19b958da-3a4a-4923-b98c-5f20f234b0e8")
+	)
+	(label "B1_OSC_OUT"
+		(at 16.51 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1b49a8d4-2192-4767-a755-fc37e44119f4")
 	)
 	(label "B3_RS485_MCU_RX"
 		(at 162.56 87.63 0)
@@ -6638,7 +6718,7 @@
 		(uuid "612d5aac-0ba9-4b77-b24a-9873cdd29073")
 	)
 	(label "B1_USR_LED"
-		(at 34.29 187.96 180)
+		(at 34.29 190.5 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6776,6 +6856,16 @@
 			(justify left bottom)
 		)
 		(uuid "7577f10a-ebc6-4aaf-81d4-4342d1fb4f08")
+	)
+	(label "B3_OSC_IN"
+		(at 241.3 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "762c182c-0e94-4d53-9641-d00487590c70")
 	)
 	(label "LSM_CS"
 		(at 34.29 168.91 180)
@@ -6986,16 +7076,6 @@
 			(justify right bottom)
 		)
 		(uuid "988cf2ef-b95a-4fe6-a8b2-8c479ee22b75")
-	)
-	(label "B3_OSC_IN"
-		(at 241.3 54.61 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "99430e77-02c4-4afa-be08-486aeb169861")
 	)
 	(label "B1_SWCLK"
 		(at 81.28 77.47 180)
@@ -7457,6 +7537,26 @@
 		)
 		(uuid "df3bfb73-7d46-421e-b691-ca0cca355216")
 	)
+	(label "B3_OSC_OUT"
+		(at 240.03 151.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e3bcf44f-a06b-4b2a-8e48-4f2bc592e095")
+	)
+	(label "B2_OSC_OUT"
+		(at 160.02 57.15 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e46a0204-1f98-448d-912b-c89f67154ae1")
+	)
 	(label "GPIOB"
 		(at 95.25 95.25 0)
 		(effects
@@ -7527,6 +7627,16 @@
 		)
 		(uuid "f7a98370-bb6c-4b7e-ac45-133b8f568f58")
 	)
+	(label "B2_OSC_OUT"
+		(at 147.32 184.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f8896ece-097f-4958-89a5-ad30e6eac82b")
+	)
 	(label "B_CLK"
 		(at 92.71 77.47 0)
 		(effects
@@ -7546,6 +7656,16 @@
 			(justify right bottom)
 		)
 		(uuid "f8dc3ea2-6ca5-437b-8e9c-a956c73cf798")
+	)
+	(label "B3_OSC_OUT"
+		(at 241.3 57.15 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fac312a1-e047-4006-8879-7cbba8837eaf")
 	)
 	(label "B2_SWDIO"
 		(at 92.71 59.69 0)
@@ -11989,7 +12109,7 @@
 			)
 		)
 		(pin "USR_LED" input
-			(at 35.56 187.96 180)
+			(at 35.56 190.5 180)
 			(uuid "c160f1d4-75b6-4804-a976-bace6f3aa729")
 			(effects
 				(font
@@ -12141,6 +12261,16 @@
 		(pin "B2_INT" output
 			(at 35.56 148.59 180)
 			(uuid "d4c147db-5c7d-4f57-ae06-9a8729c7bd5f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MCU_OSC_OUT" input
+			(at 35.56 186.69 180)
+			(uuid "a067e2e0-a314-4f04-a997-d3aad9e0bc24")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12424,6 +12554,16 @@
 				(justify right)
 			)
 		)
+		(pin "MCU_OSC_OUT" input
+			(at 146.05 184.15 0)
+			(uuid "6b570401-f53d-48c3-9fed-b190ca2bc69d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "main"
 				(path "/6aa21aac-e8da-46e9-ae7a-f048cdfa6a26"
@@ -12618,6 +12758,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "MCU_OSC_OUT" input
+			(at 238.76 151.13 0)
+			(uuid "065ac59d-5852-4be3-8265-698312b79ec4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
