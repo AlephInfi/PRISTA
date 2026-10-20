@@ -2452,7 +2452,7 @@
 		(uuid "d0c224d3-9485-4e7c-809b-cec604c1482d")
 	)
 	(hierarchical_label "GPIO_D"
-		(shape bidirectional)
+		(shape output)
 		(at 160.02 55.88 0)
 		(effects
 			(font
@@ -2485,7 +2485,7 @@
 		(uuid "1d0d2a2a-bbe1-419b-8402-e54683867707")
 	)
 	(hierarchical_label "GPIO_B"
-		(shape bidirectional)
+		(shape output)
 		(at 160.02 50.8 0)
 		(effects
 			(font
@@ -2650,7 +2650,7 @@
 		(uuid "d580eee6-7087-45e6-87a5-c1220689839c")
 	)
 	(hierarchical_label "GPIO_E"
-		(shape bidirectional)
+		(shape output)
 		(at 160.02 58.42 0)
 		(effects
 			(font
@@ -2694,7 +2694,7 @@
 		(uuid "e00a9455-016e-44b1-b3ba-cafd1bf69ca3")
 	)
 	(hierarchical_label "GPIO_A"
-		(shape bidirectional)
+		(shape output)
 		(at 160.02 48.26 0)
 		(effects
 			(font
@@ -2705,7 +2705,7 @@
 		(uuid "eb65d925-e13f-4996-974a-31fbdb208443")
 	)
 	(hierarchical_label "GPIO_C"
-		(shape bidirectional)
+		(shape output)
 		(at 160.02 53.34 0)
 		(effects
 			(font
