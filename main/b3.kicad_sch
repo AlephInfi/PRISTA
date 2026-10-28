@@ -151,6 +151,107 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_01x04"
 			(pin_names
 				(offset 1.016)
@@ -2821,6 +2922,28 @@
 		)
 		(uuid "3bb3278e-6d1b-44c6-9ea1-b6a27dda8426")
 	)
+	(text "Crystal load caps for U10: 10 pF C0G, place within 2 mm of the crystal"
+		(exclude_from_sim no)
+		(at 168.91 13.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4e05172b-2713-4a56-826d-72a741f10325")
+	)
+	(text "GPS recovery: short SAFEBOOT to GND at power-up, then use TXD/RXD at 9600 baud"
+		(exclude_from_sim no)
+		(at 21.844 150.876 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "538a457b-0e36-44db-85f3-f68a3843cc7c")
+	)
 	(text "MECHANICAL INTERFACES\n"
 		(exclude_from_sim no)
 		(at 127.762 70.866 0)
@@ -2950,16 +3073,16 @@
 		(uuid "ff43ddac-ff5c-4959-a2cb-0ba2c078f515")
 	)
 	(no_connect
-		(at 48.26 109.22)
-		(uuid "09b4bb41-a530-4147-8b70-bfbcb1e912ea")
+		(at 48.26 106.68)
+		(uuid "03d84e3d-5f03-4e04-a2fd-6d468ab028ac")
 	)
 	(no_connect
 		(at 127 83.82)
 		(uuid "25cb5ba7-fb41-44f1-9f9e-d476806b167a")
 	)
 	(no_connect
-		(at 46.99 124.46)
-		(uuid "29a99d97-c68c-4ca6-a0fb-aa258d7eee8a")
+		(at 48.26 109.22)
+		(uuid "34ae8f0a-696d-42d3-8245-d70329e0aace")
 	)
 	(no_connect
 		(at 63.5 99.06)
@@ -2968,10 +3091,6 @@
 	(no_connect
 		(at 48.26 129.54)
 		(uuid "60843353-cb2e-4e28-a04b-e9c6022dbc16")
-	)
-	(no_connect
-		(at 48.26 106.68)
-		(uuid "73482867-9174-49f7-aa52-39c08aa37b5a")
 	)
 	(wire
 		(pts
@@ -3415,6 +3534,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 144.78) (xy 36.83 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af98e734-153f-4d86-9e71-e360a9376c9a")
+	)
+	(wire
+		(pts
 			(xy 144.78 143.51) (xy 149.86 143.51)
 		)
 		(stroke
@@ -3513,6 +3642,16 @@
 		)
 		(uuid "48567df4-57eb-4ee7-bc6d-b244b07b236f")
 	)
+	(label "GPS_SAFEBOOT"
+		(at 36.83 144.78 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "58e2136f-531a-408a-925a-3e0a74f7ddab")
+	)
 	(label "B3_RS485+"
 		(at 92.71 40.64 0)
 		(effects
@@ -3532,6 +3671,16 @@
 			(justify right bottom)
 		)
 		(uuid "9224c3ca-2fde-49e3-b4e3-e73cb039f750")
+	)
+	(label "GPS_SAFEBOOT"
+		(at 46.99 124.46 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "967da33e-7f23-4aef-9003-083485abf9d1")
 	)
 	(label "B3_RS485+"
 		(at 152.4 97.79 180)
@@ -3575,6 +3724,17 @@
 			(justify left)
 		)
 		(uuid "213bdfc1-1b3a-40a5-8f9a-5fdb9eb225d1")
+	)
+	(hierarchical_label "MCU_OSC_OUT"
+		(shape input)
+		(at 182.88 29.21 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4321d13a-e2cf-4297-91f7-7ab28d561fe1")
 	)
 	(hierarchical_label "MCU_OSC_IN"
 		(shape output)
@@ -3630,6 +3790,17 @@
 			(justify left)
 		)
 		(uuid "9b722774-4e46-4b67-b959-b63f7597f1d3")
+	)
+	(hierarchical_label "MCU_OSC_IN"
+		(shape output)
+		(at 172.72 29.21 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a2cbdab2-5901-4d7f-8f5f-7b45438c5e29")
 	)
 	(hierarchical_label "GPS_RST"
 		(shape input)
@@ -3954,10 +4125,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "0a4e7424-1cdc-41d3-95b1-f382b7ea6def")
 		(property "Reference" "J13"
 			(at 156.718 91.948 0)
@@ -4030,6 +4201,82 @@
 			(project "main"
 				(path "/6aa21aac-e8da-46e9-ae7a-f048cdfa6a26/b2cd24c1-9d80-4f3c-8da8-4c6d254f3102"
 					(reference "J13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 36.83 142.24 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0b34fcd1-eb4a-4f52-9f6f-6826ac3e791d")
+		(property "Reference" "TP1"
+			(at 39.37 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GPS_SAFEBOOT"
+			(at 39.37 140.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 36.83 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "GPS recovery test pad"
+			(at 36.83 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "87957b55-76ef-469d-a949-a3cb38628ff1")
+		)
+		(instances
+			(project "main"
+				(path "/6aa21aac-e8da-46e9-ae7a-f048cdfa6a26/b2cd24c1-9d80-4f3c-8da8-4c6d254f3102"
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -4343,6 +4590,83 @@
 			(project "main"
 				(path "/6aa21aac-e8da-46e9-ae7a-f048cdfa6a26/b2cd24c1-9d80-4f3c-8da8-4c6d254f3102"
 					(reference "#PWR069")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 49.53 140.97 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "23525f8c-f112-44c2-8c42-a49fcbb125f9")
+		(property "Reference" "#PWR106"
+			(at 49.53 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 49.53 146.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\""
+			(at 49.53 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f0bda3af-e5ea-43b5-a451-c05d4085df1d")
+		)
+		(instances
+			(project "main"
+				(path "/6aa21aac-e8da-46e9-ae7a-f048cdfa6a26/b2cd24c1-9d80-4f3c-8da8-4c6d254f3102"
+					(reference "#PWR106")
 					(unit 1)
 				)
 			)
@@ -5219,10 +5543,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "74a1557f-077b-4760-b508-836d4941cf67")
 		(property "Reference" "J8"
@@ -5393,10 +5717,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "8466e305-7295-42e4-99b9-a7e46e17d2c8")
 		(property "Reference" "AE1"
@@ -5625,6 +5949,96 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 172.72 33.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "990af414-fc9b-4d41-b3fd-3047562f7d1e")
+		(property "Reference" "C51"
+			(at 175.26 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10p"
+			(at 175.26 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 172.72 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Crystal load capacitor, C0G"
+			(at 172.72 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1634"
+			(at 172.72 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "19858e30-7d3e-445b-a014-55f1794d5c49")
+		)
+		(pin "2"
+			(uuid "51dc3019-db0b-4809-b52b-845dc064e628")
+		)
+		(instances
+			(project "main"
+				(path "/6aa21aac-e8da-46e9-ae7a-f048cdfa6a26/b2cd24c1-9d80-4f3c-8da8-4c6d254f3102"
+					(reference "C51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 49.53 52.07 0)
 		(unit 1)
@@ -5711,7 +6125,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)
@@ -6148,6 +6562,173 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 182.88 36.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b1230a90-9c02-4255-93ca-2780381623a8")
+		(property "Reference" "#PWR105"
+			(at 182.88 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 182.88 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\""
+			(at 182.88 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f7a82e07-6fd3-4494-b78e-06c46e4e23d8")
+		)
+		(instances
+			(project "main"
+				(path "/6aa21aac-e8da-46e9-ae7a-f048cdfa6a26/b2cd24c1-9d80-4f3c-8da8-4c6d254f3102"
+					(reference "#PWR105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 182.88 33.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ba45f426-e1ae-43bd-99df-e7c78df39117")
+		(property "Reference" "C52"
+			(at 185.42 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10p"
+			(at 185.42 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 182.88 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Crystal load capacitor, C0G"
+			(at 182.88 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1634"
+			(at 182.88 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "be6f086a-8c83-4de7-a0a9-260784dfc5da")
+		)
+		(pin "2"
+			(uuid "e1c6b25d-3f2d-4ddc-b406-0fd9aac83de3")
+		)
+		(instances
+			(project "main"
+				(path "/6aa21aac-e8da-46e9-ae7a-f048cdfa6a26/b2cd24c1-9d80-4f3c-8da8-4c6d254f3102"
+					(reference "C52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 175.26 81.28 0)
 		(unit 1)
@@ -6296,6 +6877,82 @@
 			(project "main"
 				(path "/6aa21aac-e8da-46e9-ae7a-f048cdfa6a26/b2cd24c1-9d80-4f3c-8da8-4c6d254f3102"
 					(reference "#PWR091")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 49.53 140.97 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cb4077a8-9290-45df-969b-89edd766fefa")
+		(property "Reference" "TP4"
+			(at 52.07 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 52.07 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 49.53 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "GPS recovery test pad"
+			(at 49.53 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6001734a-1fd2-4e1e-9ee4-8a4df36a82db")
+		)
+		(instances
+			(project "main"
+				(path "/6aa21aac-e8da-46e9-ae7a-f048cdfa6a26/b2cd24c1-9d80-4f3c-8da8-4c6d254f3102"
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -6479,7 +7136,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 133.096 141.732 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6560,7 +7217,7 @@
 				)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "LED red"
 			(at 139.3825 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6604,6 +7261,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 140.97 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C84256"
 			(at 140.97 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -6704,6 +7372,83 @@
 			(project "main"
 				(path "/6aa21aac-e8da-46e9-ae7a-f048cdfa6a26/b2cd24c1-9d80-4f3c-8da8-4c6d254f3102"
 					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 172.72 36.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "da5a358b-8b96-4fa7-88e9-5720ce713b90")
+		(property "Reference" "#PWR104"
+			(at 172.72 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 172.72 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\""
+			(at 172.72 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "24817400-6abf-452a-886c-774efd847913")
+		)
+		(instances
+			(project "main"
+				(path "/6aa21aac-e8da-46e9-ae7a-f048cdfa6a26/b2cd24c1-9d80-4f3c-8da8-4c6d254f3102"
+					(reference "#PWR104")
 					(unit 1)
 				)
 			)
@@ -6966,7 +7711,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "16MHz"
 			(at 144.78 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6999,6 +7744,28 @@
 			)
 		)
 		(property "Description" "3mm variant"
+			(at 144.78 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C13738"
+			(at 144.78 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "YXC X322516MLB4SI"
 			(at 144.78 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -7177,6 +7944,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C8963"
+			(at 73.66 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "5"
 			(uuid "1fcf2ccb-47a0-46cb-b84b-7d41f1105c6a")
 		)
@@ -7244,7 +8022,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 90.17 99.06 0)
 			(hide yes)
 			(show_name no)

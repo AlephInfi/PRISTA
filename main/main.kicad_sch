@@ -809,6 +809,285 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R_Pack04"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "RN"
+				(at -7.62 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_Pack04"
+				(at 5.08 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 6.985 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "4 resistor network, parallel topology"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "DIP* SOIC* R*Array*Concave* R*Array*Convex*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_Pack04_0_1"
+				(rectangle
+					(start -6.35 -2.413)
+					(end 3.81 2.413)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -5.715 1.905)
+					(end -4.445 -1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -3.175 1.905)
+					(end -1.905 -1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -0.635 1.905)
+					(end 0.635 -1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 1.905 1.905)
+					(end 3.175 -1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Pack04_1_1"
+				(pin passive line
+					(at -5.08 -5.08 90)
+					(length 3.175)
+					(name "R1.1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -5.08 90)
+					(length 3.175)
+					(name "R2.1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 3.175)
+					(name "R3.1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 3.175)
+					(name "R4.1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 3.175)
+					(name "R4.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 5.08 270)
+					(length 3.175)
+					(name "R3.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 5.08 270)
+					(length 3.175)
+					(name "R2.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 5.08 270)
+					(length 3.175)
+					(name "R1.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MCU_ST_STM32F4:STM32F405RGTx"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -5660,6 +5939,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 194.31) (xy 91.44 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "597b85c4-6fea-4320-8b84-c129a3473189")
+	)
+	(wire
+		(pts
 			(xy 92.71 180.34) (xy 91.44 180.34)
 		)
 		(stroke
@@ -5707,6 +5996,16 @@
 			(type default)
 		)
 		(uuid "60c0c4ab-593e-4968-aab6-0ce2e6d51aeb")
+	)
+	(wire
+		(pts
+			(xy 83.82 194.31) (xy 86.36 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63da86ce-3b69-42c8-806a-1c20d1f0a7ab")
 	)
 	(wire
 		(pts
@@ -5937,6 +6236,16 @@
 			(type default)
 		)
 		(uuid "7af61b2f-3433-4b62-b2b8-040ff99a5478")
+	)
+	(wire
+		(pts
+			(xy 86.36 194.31) (xy 88.9 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e2f4a3f-a788-4691-9322-5cd263ff9f6d")
 	)
 	(wire
 		(pts
@@ -9376,6 +9685,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C23345"
+			(at 74.93 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "777c05a7-8533-4eb0-a248-1d66d7070d0f")
 		)
@@ -10203,6 +10523,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 99.06 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23345"
 			(at 99.06 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -12256,6 +12587,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C23345"
+			(at 74.93 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a7160590-9efa-4689-aa20-d784d16f2d76")
 		)
@@ -13079,6 +13421,125 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Pack04")
+		(at 88.9 189.23 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e8b5bd7b-509a-4126-a78f-6b55aca7326e")
+		(property "Reference" "RN1"
+			(at 96.52 187.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 96.52 190.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
+			(at 88.9 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "4 isolated 10k resistors (SD DAT0-3 pull-ups)"
+			(at 88.9 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C29718"
+			(at 88.9 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "UNI-ROYAL 4D03WGJ0103T5E"
+			(at 88.9 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "20a598fa-111e-4f4f-b7a6-cec0fac78f7d")
+		)
+		(pin "2"
+			(uuid "e94654a6-45f7-462a-889a-4db2b3b6da47")
+		)
+		(pin "3"
+			(uuid "7f46e61f-a074-4284-9133-16cf13710869")
+		)
+		(pin "4"
+			(uuid "19920c4f-7640-457f-85e8-5d2643459ea4")
+		)
+		(pin "5"
+			(uuid "fe09f239-f09f-4089-8130-e6ea0db885ce")
+		)
+		(pin "6"
+			(uuid "11a75b35-f77f-4c89-b3f8-ec65f8b83f78")
+		)
+		(pin "7"
+			(uuid "7d2a4f0d-a6a0-4962-aef3-27d575f88661")
+		)
+		(pin "8"
+			(uuid "477d8d01-f33d-409f-8bc0-b39ea998afd2")
+		)
+		(instances
+			(project "main"
+				(path "/6aa21aac-e8da-46e9-ae7a-f048cdfa6a26"
+					(reference "RN1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 85.09 25.4 0)
 		(unit 1)
@@ -13154,97 +13615,6 @@
 			(project "main"
 				(path "/6aa21aac-e8da-46e9-ae7a-f048cdfa6a26"
 					(reference "C46")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Network04")
-		(at 86.36 189.23 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ec1f8ed6-1638-4895-bcc5-2cd1ef74be03")
-		(property "Reference" "RN1"
-			(at 93.98 187.7059 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "R_Net04_10k"
-			(at 93.98 190.2459 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
-			(at 79.375 189.23 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 86.36 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "4 resistor network, star topology, bussed resistors, small symbol"
-			(at 86.36 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "8349bf23-03a5-4634-8c57-13d84d3fe64b")
-		)
-		(pin "3"
-			(uuid "4141850c-7ef1-43b3-90ad-7c8773147e71")
-		)
-		(pin "2"
-			(uuid "7178778e-956c-4b5b-b836-bb0489e49981")
-		)
-		(pin "5"
-			(uuid "38ef7fba-784c-4723-9b41-52bed9ab3e40")
-		)
-		(pin "1"
-			(uuid "5f84dd73-c834-4eb2-a2aa-17bc9588ddda")
-		)
-		(instances
-			(project "main"
-				(path "/6aa21aac-e8da-46e9-ae7a-f048cdfa6a26"
-					(reference "RN1")
 					(unit 1)
 				)
 			)

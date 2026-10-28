@@ -2063,6 +2063,17 @@
 		)
 		(uuid "4248c955-560b-4ded-bb2a-dae703c290f9")
 	)
+	(text "Crystal load caps for U11: 10 pF C0G, place within 2 mm of the crystal"
+		(exclude_from_sim no)
+		(at 71.12 8.89 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d2bac3dd-fb2b-4d12-8070-0ca3b2ba45d9")
+	)
 	(text "MECHANICAL INTERFACES\n"
 		(exclude_from_sim no)
 		(at 126.492 21.336 0)
@@ -2506,6 +2517,17 @@
 		)
 		(uuid "292fcf08-b986-43f0-9f58-b30347692fcb")
 	)
+	(hierarchical_label "MCU_OSC_IN"
+		(shape output)
+		(at 74.93 24.13 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "411ae884-b402-47ad-a49f-d36fab3fba4e")
+	)
 	(hierarchical_label "B2_STLink_CLK"
 		(shape input)
 		(at 137.16 33.02 0)
@@ -2560,6 +2582,17 @@
 			(justify right)
 		)
 		(uuid "6ecaa3bb-5283-4dc4-b035-a5a981461fb5")
+	)
+	(hierarchical_label "MCU_OSC_OUT"
+		(shape input)
+		(at 85.09 24.13 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "75918c25-e1a4-4857-b565-c46ed4321bc5")
 	)
 	(hierarchical_label "USR_LED"
 		(shape input)
@@ -2874,10 +2907,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "13b94aff-22fa-4de4-95e1-c33153b64cde")
 		(property "Reference" "J7"
@@ -2967,10 +3000,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "24a93b95-9524-4637-8f42-0f84ba401994")
 		(property "Reference" "J12"
 			(at 156.972 66.04 0)
@@ -2994,7 +3027,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical"
 			(at 154.94 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -3061,8 +3094,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x08")
-		(at 151.13 53.34 0)
+		(lib_id "power:GND")
+		(at 85.09 31.75 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3070,6 +3103,83 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(uuid "266faa43-67f4-4897-aafa-35e932529889")
+		(property "Reference" "#PWR103"
+			(at 85.09 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 85.09 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\""
+			(at 85.09 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c325498d-356e-4ccc-9f14-0062867f6de8")
+		)
+		(instances
+			(project "main"
+				(path "/6aa21aac-e8da-46e9-ae7a-f048cdfa6a26/59d03ad0-5707-4a1e-8261-79210a859241"
+					(reference "#PWR103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x08")
+		(at 151.13 53.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
 		(uuid "305d8bc7-5a10-4312-822d-f01661bbce20")
 		(property "Reference" "J9"
 			(at 149.86 66.04 0)
@@ -3093,7 +3203,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical"
 			(at 151.13 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -4005,7 +4115,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 126.746 90.932 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4146,6 +4256,173 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 74.93 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9b2e9aa1-d5ce-4595-8362-ba6c2cb211a3")
+		(property "Reference" "C49"
+			(at 77.47 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10p"
+			(at 77.47 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 74.93 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Crystal load capacitor, C0G"
+			(at 74.93 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1634"
+			(at 74.93 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ba6236ce-202a-4dcd-8333-9c47eb76ba70")
+		)
+		(pin "2"
+			(uuid "c8762764-72d6-4986-bbdf-2f47a2075c8d")
+		)
+		(instances
+			(project "main"
+				(path "/6aa21aac-e8da-46e9-ae7a-f048cdfa6a26/59d03ad0-5707-4a1e-8261-79210a859241"
+					(reference "C49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 74.93 31.75 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b09b34fd-dea0-4c5c-add4-637c01ce7bb6")
+		(property "Reference" "#PWR102"
+			(at 74.93 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 74.93 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 74.93 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\""
+			(at 74.93 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7b562eb4-d5d3-4f4a-b0ac-969e822e7af4")
+		)
+		(instances
+			(project "main"
+				(path "/6aa21aac-e8da-46e9-ae7a-f048cdfa6a26/59d03ad0-5707-4a1e-8261-79210a859241"
+					(reference "#PWR102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 134.62 92.71 0)
 		(unit 1)
@@ -4167,7 +4444,7 @@
 				)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "LED red"
 			(at 133.0325 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4221,6 +4498,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C84256"
+			(at 134.62 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c92dab2a-6ed3-4d60-8a47-1ccd7e03e98d")
 		)
@@ -4258,7 +4546,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "16MHz"
 			(at 57.15 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4291,6 +4579,28 @@
 			)
 		)
 		(property "Description" "3mm variant"
+			(at 57.15 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C13738"
+			(at 57.15 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "YXC X322516MLB4SI"
 			(at 57.15 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -4709,6 +5019,96 @@
 			(project "main"
 				(path "/6aa21aac-e8da-46e9-ae7a-f048cdfa6a26/59d03ad0-5707-4a1e-8261-79210a859241"
 					(reference "#PWR060")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 85.09 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e7d1417a-3969-43c2-8be1-6c45331b1169")
+		(property "Reference" "C50"
+			(at 87.63 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10p"
+			(at 87.63 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 85.09 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Crystal load capacitor, C0G"
+			(at 85.09 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1634"
+			(at 85.09 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1678d09f-7412-4108-a6b9-febf7c38720a")
+		)
+		(pin "2"
+			(uuid "2136987c-46c7-42d9-9b62-a0e6e99df408")
+		)
+		(instances
+			(project "main"
+				(path "/6aa21aac-e8da-46e9-ae7a-f048cdfa6a26/59d03ad0-5707-4a1e-8261-79210a859241"
+					(reference "C50")
 					(unit 1)
 				)
 			)
